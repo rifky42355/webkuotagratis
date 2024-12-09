@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indosat Kuota Gratis</title>
+    <!-- Link Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      .indo-main-footer {
+        background-color: #000000;
+        color: #333;
+        padding: 20px 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .indo-main-footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .indo-main-footer .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .indo-main-footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .indo-main-footer .first_depth {
+        margin-bottom: 20px;
+        flex: 1;
+        min-width: 200px;
+      }
+
+      .indo-main-footer .title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .indo-main-footer .second_depth li {
+        margin-bottom: 5px;
+      }
+
+      .indo-main-footer .second_depth a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      .indo-main-footer .second_depth a:hover {
+        text-decoration: underline;
+      }
+
+      .indo-main-footer .social-icons {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        margin-top: 20px;
+      }
+
+      .indo-main-footer .social-icons ul.sns {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+      }
+
+      .indo-main-footer .social-icons ul.sns li {
+        list-style: none;
+      }
+
+      .indo-main-footer .social-icons ul.sns li a img {
+        transition: transform 0.2s;
+      }
+
+      .indo-main-footer .social-icons ul.sns li a img:hover {
+        transform: scale(1.2);
+      }
+
+      .indo-main-footer .social-title {
+        font-size: 16px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      .indo-main-footer #copyright-sec-left {
+        flex: 1;
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .indo-main-footer #socialicon-sec-right {
+        flex: 1;
+        text-align: right;
+      }
+
+      .indo-main-footer .input_box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .indo-main-footer .input_box input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+      }
+
+      .indo-main-footer .input_box .btn {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .indo-main-footer .input_box .btn:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .indo-main-footer .flex {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .indo-main-footer #copyright-sec-left,
+        .indo-main-footer #socialicon-sec-right {
+          text-align: center;
+          color: white;
+        }
+      }
+      .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      background-color: #99fd96;
+      color: #2e9920; 
+      padding: 10px;
+      border: 1px solid #2cc452; 
+      border-radius: 5px;
+    }
+    .marquee-text {
+      display: inline-block;
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Banner -->
+    <header class="bg-light">
+      <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../static/banner.png" class="d-block w-100" alt="Slide 1" />
+          </div>
+          <div class="carousel-item">
+            <img src="../static/banner2.png" class="d-block w-100" alt="Slide 2" />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#bannerCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#bannerCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+            <!-- Flash Messages -->
+        <!-- Flash Messages -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="marquee-container">
+              <span class="marquee-text">
+                {{ message }}
+              </span>
+            </div>
+          {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+    <!-- Form -->
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="text-center mb-4">Isi Data Anda</h2>
+          <form action="/submit" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Masukkan nama Anda"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Nomor HP</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Masukkan nomor HP Anda"
+              />
+            </div>
+            <button type="submit" class="btn btn-danger w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="indo-main-footer">
+      <footer>
+        <div class="container wrap">
+        <div class="social-icons">
+          <div class="container copyright wrap">
+            <div class="mid_side contents">
+              <ul class="flex py-3">
+                <li id="copyright-sec-left">
+                  Indosat Ooredoo Hutchison © 2023 All Right Reserved
+                </li>
+                <li id="socialicon-sec-right"></li>
+                <li class="social-title followus-title">Follow us</li>
+                <li>
+                  <ul class="second_depth social-title flex sns">
+                    <li>
+                      <a
+                        rel="noreferrer"
+                        href="https://www.facebook.com/IM3Ooredoo/"
+                        class="fb-icons"
+                        target="_blank"
+                      >
+                        <img
+                          id="ps_facebook"
+                          alt="facebook"
+                          src="https://im3-img.indosatooredoo.com/indosatassets/images/fb-icon-color.svg"
+                          imglazy="https://im3-img.indosatooredoo.com/indosatassets/images/fb-icon-color.svg"
+                          width="36px"
+                          height="36px"
+                          imgscript="T"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        rel="noreferrer"
+                        href="https://instagram.com/indosatim3"
+                        class="in-icons"
+                        target="_blank"
+                      >
+                        <img
+                          id="ps_instagram"
+                          alt="instagram"
+                          src="https://im3-img.indosatooredoo.com/indosatassets/images/inst-bgcolor-icon.svg"
+                          imglazy="https://im3-img.indosatooredoo.com/indosatassets/images/inst-bgcolor-icon.svg"
+                          width="36px"
+                          height="35.2031px"
+                          imgscript="T"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        rel="noreferrer"
+                        href="https://x.com/CareIM3"
+                        class="tw-icons"
+                        target="_blank"
+                      >
+                        <img
+                          id="ps_twitter"
+                          alt="twitter"
+                          src="https://im3-img.indosatooredoo.com/indosatassets/images/tw-color-icon.svg"
+                          imglazy="https://im3-img.indosatooredoo.com/indosatassets/images/tw-color-icon.svg"
+                          width="36px"
+                          height="36px"
+                          imgscript="T"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        rel="noreferrer"
+                        href="https://youtube.com/indosat"
+                        class="yb-icons"
+                        target="_blank"
+                      >
+                        <img
+                          id="ps_youtube"
+                          alt="youtube"
+                          src="https://im3-img.indosatooredoo.com/indosatassets/images/youtube-bgcolor-icon.svg"
+                          imglazy="https://im3-img.indosatooredoo.com/indosatassets/images/youtube-bgcolor-icon.svg"
+                          width="36px"
+                          height="36px"
+                          imgscript="T"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.tiktok.com/@indosatim3"
+                        class="ln-icons"
+                        target="_blank"
+                      >
+                        <img
+                          id="ps_tiktok"
+                          alt="Ticktok"
+                          src="https://im3-img.indosatooredoo.com/indosatassets/images/ico_socmed_tiktok.svg"
+                          imglazy="https://im3-img.indosatooredoo.com/indosatassets/images/ico_socmed_tiktok.svg"
+                          width="36px"
+                          height="36px"
+                          imgscript="T"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script>
+        try {
+          setTimeout(() => {
+            LogHE(
+              "http://myim3-he.indosatooredoo.com/api/v1/token/getweb?X-IMI-TOKENID=10F2716BE1484C8A8ED01215369ACC24&X-IMI-CHANNEL=OCW&X-IMI-LANGUAGE=ID&tid=627328b5c7cb443ab8492e9492ffe324&ref=B066BD587D10AC8301034013EC1947455EAD6788FC2234CEFCE8FBA5CD5FEF912C8181C2ADF2F963B63F6E74945137284B57F8A289D6679729DD4A486D213832F755E78A642125C2A1E4E0489973368FDCCE252A610B"
+            );
+          }, 3000);
+        } catch (e) {
+          console.log("HE URL Call" + e);
+        }
+      </script>
+    </div>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Link Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </body>
+</html>
